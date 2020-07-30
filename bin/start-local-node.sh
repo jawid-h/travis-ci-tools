@@ -2,16 +2,15 @@
 
 set -ea
 
-cmd_usage="Prepare mn-bootstrap
+cmd_usage="Start local node
 
 Usage: prepare-mn-bootstrap.sh <path-to-package.json> [options]
-  <path-to-package.json> must be an absolute path including file name.
+  <path-to-package.json> must be an absolute path including file name
 
   Options:
-  --override-major-version
-  --dapi-branch
-  --drive-branch
-
+  --override-major-version    - major version to use
+  --dapi-branch               - dapi branch to be injected into mn-bootstrap
+  --drive-branch              - drive branch to be injected into mn-bootstrap
 "
 
 PACKAGE_JSON_PATH="$1"
